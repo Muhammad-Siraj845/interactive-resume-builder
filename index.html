@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Interactive Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="resume-builder">
+        <h1>Resume Builder</h1>
+        <form id="resumeForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="text" id="title" placeholder="Job Title" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="text" id="phone" placeholder="Phone Number" required />
+            <input type="text" id="linkedin" placeholder="LinkedIn Profile URL" />
+            <textarea id="experience" placeholder="Work Experience" required></textarea>
+            <textarea id="education" placeholder="Education" required></textarea>
+            <textarea id="skills" placeholder="Skills" required></textarea>
+            <textarea id="certifications" placeholder="Certifications" ></textarea>
+            <textarea id="projects" placeholder="Projects" ></textarea>
+            <button type="button" onclick="generateResume()">Generate Resume</button>
+        </form>
+        <div id="resumeOutput" class="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
